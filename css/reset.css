@@ -1,0 +1,26 @@
+*{padding:0;margin:0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;margin: 0px; outline: 0;outline: none;padding: 0px; text-decoration:none;}
+ol, ul, li {list-style: none; font-family: 'open_sanssemibold';}
+
+a, a:link, a:visited { text-decoration:none;}
+a:hover { text-decoration:none;}
+
+img {border:none; max-width:100%; outline:none; height:auto;}
+html, body {margin: 0;padding: 0; font-family: 'open_sanssemibold';}
+.clear{clear:both;}
+.hidden{ display:none;}
+.zero_padding { padding:0px !important;}
+.zero_margin { margin-right:0px !important;}
+.textleft { text-align:left !important;}
+.textright { text-align:right !important;}
+.padLzero { padding-left:0px !important;}
+.padRzero { padding-right:0px !important;}
+.padTzero { padding-top:0px !important;}
+.padBzero { padding-bottom:0px !important;}
+.marginLzero { margin-left:0px !important;}
+.marginRzero { margin-right:0px !important;}
+.marginTzero { margin-top:0px !important;}
+.marginBzero { margin-bottom:0px !important;}
+.padT14 { padding-top:14px;}
+.min_height300 { min-height:300px;}
+.marginB10 { margin-bottom:10px;}
