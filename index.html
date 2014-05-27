@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ecommeerce</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript"></script>
+
+	<!--Slider css & script-->
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function() {   
+		
+			var theWindow        = $(window),
+			    $bg              = $(".bg"),
+			    aspectRatio      = $bg.width() / $bg.height();
+			    			    		
+			function resizeBg() {
+				
+				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+				     $bg
+				    	.removeClass()
+				    	.addClass('bgwidth');
+				} else {
+				    $bg
+				    	.removeClass()
+				    	.addClass('bgwidth');
+				}
+							
+			}
+			                   			
+			theWindow.resize(function() {
+				resizeBg();
+			}).trigger("resize");
+		
+		});
+	</script>
+	<!--Slider css and script end here-->
+
+	</head>
+
+	<body>
+<!--Top bar part start here-->
+<section id="top_header" class="col-xs-12 zero_padding background_white" >
+      <div class="container zero_padding">
+    <div class="links col-md-6 col-sm-6 col-lg-6 col-xs-12">
+          <p>CUSTOMER CARE: 888-333-222</p>
+        </div>
+    <div class="account_information col-md-6 col-sm-6 col-lg-6 col-xs-12 ">
+          <ul class="share-search col-md-2 col-sm-2 col-lg-2 col-xs-3 zero_padding pull-right">
+        <li class="search-button"><a id="tickersearch" href="#"><i class="icon-search">&nbsp;</i></a>
+              <form role="search" method="GET" action="http://koreaconnection.net" id="tickersearchform" style="display: none;">
+            <div>
+                  <label class="screen-reader-text" for="s">Search for:</label>
+                  <input type="text" placeholder="Search here" value="" name="s" id="s">
+                </div>
+          </form>
+            </li>
+      </ul>
+          <span class="my_account col-md-2 col-sm-2 col-lg-2 col-xs-3 zero_padding pull-right"><i class="glyphicon-user"></i></span>
+          <ul id="myTab" class="nav nav-tabs col-md-2 col-sm-2 col-lg-2 col-xs-3 zero_padding pull-right mobile_dollar">
+        <li class="dropdown"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">$ US <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">$120</a></li>
+            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">$300</a></li>
+          </ul>
+            </li>
+      </ul>
+        </div>
+  </div>
+    </section>
+<!--Top bar part end here--> 
+
+<!--header part start here-->
+<section id="header" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 desktop_header">
+      <div class="container ">
+    		<div class="logo col-md-3 col-lg-3 col-sm-3 col-xs-12 padLzero padRzero"><a href="#"></a></div>
+   			 <div class="menu_nav col-md-6 col-sm-6 col-lg-6 col-xs-12 padLzero padRzero">
+          		<ul class="nav nav-tabs desktop_menu">
+        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> new <span class="caret"></span> </a>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </li>
+        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> designers <span class="caret"></span> </a>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </li>
+        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> women <span class="caret"></span> </a>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </li>
+        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> men <span class="caret"></span> </a>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </li>
+        <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> clearence <span class="caret"></span> </a>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </li>
+      </ul>
+      
+      			
+                
+        	 </div>
+    <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12 padLzero padRzero">
+          <div class="your_cart">
+        <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">Default <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+            </div>
+      </div>
+          <div class="cart_information"> <a class="cart_image"><img src="images/cart.png" /></a> <span class="cart_values">0 ITEMS | $0</span> </div>
+        </div>
+  </div>
+    </section>
+    
+<section id="header" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 mobile_header">
+      <div class="container zero_padding">
+    		<div class="logo col-md-3 col-lg-3 col-sm-3 col-xs-12 padLzero padRzero"><a href="#"><img src="images/logo.jpg" /></a></div>
+   			 
+    <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12 padLzero padRzero">
+          
+          <div class="cart_information"> <a class="cart_image"><img src="images/cart.png" /></a> <span class="cart_values">0 ITEMS | $0</span> </div>
+          
+        </div>
+        <div class="menu_nav col-md-6 col-sm-6 col-lg-6 col-xs-12 padLzero padRzero">
+          		
+      
+      			<!--mobile menu-->
+                <div class="mobile_menu">
+                	<div class="navbar-header">
+                      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+      				  <a class="navbar-brand" href="./">Menu</a>
+    			</div>
+                	<nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse" style="height: 1px;">
+      				<ul class="nav navbar-nav">
+        <li>
+          <a href="./getting-started">Getting started</a>
+        </li>
+        <li>
+          <a href="./css">CSS</a>
+        </li>
+        <li>
+          <a href="./components">Components</a>
+        </li>
+        <li>
+          <a href="./javascript">JavaScript</a>
+        </li>
+        <li>
+          <a href="./customize">Customize</a>
+        </li>
+      </ul>
+      				<ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="./about">About</a>
+        </li>
+      </ul>
+                </nav>
+                </div>
+                
+        	 </div>
+  </div>
+    </section>
+<!--header part end here--> 
+
+<!--Slider part start here-->
+<section id="slidersection">
+      <div class="home" id="slider">
+    <div class="bx-wrapper" style="max-width: 100%;">
+          <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 531px;">
+        <ul class="bxslider" style="width: auto; position: relative;">
+             
+              <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider4.jpg"><a class="shop_now">Shop Now</a></li>              
+              <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider3.jpg"><a class="shop_now">Shop Now</a></li>
+               <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider4.jpg"><a class="shop_now">Shop Now</a></li>              
+              <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider3.jpg"><a class="shop_now">Shop Now</a></li>
+               <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider4.jpg"><a class="shop_now">Shop Now</a></li>              
+              <li class="slider" style="float: none; list-style: none outside none; position: absolute; width: 1349px; z-index: 0; display: none;"><img class="bgwidth" src="images/slider3.jpg"><a class="shop_now">Shop Now</a></li>
+            </ul>
+      </div>
+          <div class="bx-controls bx-has-pager bx-has-controls-direction">
+     
+       
+      </div>
+        </div>
+  </div>
+    </section>
+
+<!--Main part start here-->
+<section id="main_part"> 
+      
+      <!--Social media bar-->
+      <div class="social_media_bar">
+    <div class="container">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 padT14 padLzero padRzero email_text_box">
+        <p class="pull-left">Stay Updated</p>
+        <div class="email_box pull-left">
+              <input id="newsletter" class="email_text" title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email...') this.value='';" onblur="if(this.value=='') this.value='Enter your email...';" type="text" name="email" value="Enter your email...">
+              <div class="actions">
+            <button class="button" type="submit">+</button>
+          </div>
+            </div>
+      </div>
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 social_media_icons padLzero padRzero">
+        <ul class="social_icons pull-right">
+              <li class="light"><a href="#" class=""><img src="images/f.png" /></a></li>
+              <li><a href="#"><img src="images/t.png" /></a></li>
+              <li class="light"><a href="#"><img src="images/p.png" /></a></li>
+            </ul>
+        <p class="pull-right padT14">Find us here</p>
+      </div>
+        </div>
+  </div>
+      
+      <!--Main product show part start here--> 
+      
+      <!--Product block-->
+      <div class="container">
+    <div class="product_show_block col-md-12 col-sm-12 col-lg-12 col-xs 12 zero_padding">
+          <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12 left_product_block zero_padding"><a href="#"><img src="images/product_1.png" /></a></div>
+          <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12 right_product_block zero_padding">
+        <div class="zero_padding right_product_block_first"> <a href="#"><img src="images/product_2.png" /><span class="hover_text"><i class="info"></i></span></a> </div>
+        <div class="zero_padding right_product_block_second"> <a href="#"><img src="images/product_3.png" /> <span class="hover_text">
+          <h3>best sellers</h3>
+          </span> </a> </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 zero_padding right_product_block_second"> <a href="#"><img src="images/product_4.png" /> <span class="hover_text">
+          <h2>best sellers</h2>
+          <input type="button" class="small_shop_cart light_green" value="Shop Now"/>
+          </span> </a> </div>
+      </div>
+        </div>
+  </div>
+      
+      <!--products tab start here-->
+      <div class="products_tabs products_tabs_desktop">
+    <div class="container">
+          <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a data-toggle="tab" href="#home">what’s hot?</a></li>
+        <li class=""><a data-toggle="tab" href="#profile">designers</a></li>
+        <li class=""><a data-toggle="tab" href="#profile">featured</a></li>
+        <li class=""><a data-toggle="tab" href="#profile">latest</a></li>
+        <div class="controls"> <a class="prev_control"></a> <a class="next_control next_active"></a> </div>
+      </ul>
+        </div>
+    <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade in active" id="home">
+        <ul>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             
+            </ul>
+      </div>
+          <div class="tab-pane fade" id="profile">
+        <ul>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             
+            </ul>
+      </div>
+          <div class="tab-pane fade" id="dropdown1">
+        <ul>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             
+            </ul>
+      </div>
+          <div class="tab-pane fade" id="dropdown2">
+        <ul>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             <li class="col-md-3 col-sm-4 col-lg-3 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+             
+            </ul>
+      </div>
+        </div>
+  </div>
+  			<!--mobile product tab start here-->
+            	<div class="products_tabs products_tabs_mobile">
+    				<div class="container zero_padding">
+          <ul class="nav nav-tabs" id="myTab">
+        
+        <li class="dropdown active">
+          <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#">what’s hot?<b class="caret"></b></a>
+          <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu">
+            <li class=""><a data-toggle="tab" tabindex="-1" href="#dropdown1">designers</a></li>
+            <li class="active"><a data-toggle="tab" tabindex="-1" href="#dropdown2">featured</a></li>
+            <li class=""><a data-toggle="tab" tabindex="-1" href="#dropdown1">latest</a></li>
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        
+      </ul>
+        </div>
+    				<div id="myTabContent" class="tab-content">
+          			<div class="tab-pane fade in active" id="home">
+                    <ul>
+                          <li class="col-md-2 col-sm-2 col-lg-2 col-xs-6">
+                            <div class="product_show"> <span class="on_sale"><span class="inner">
+                          <p>Sale</p>
+                          </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                              <h4>Nadia Dress</h4>
+                              <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+                        </li>
+                          <li class="col-md-2 col-sm-2 col-lg-2 col-xs-6">
+                        <div class="product_show"> <span class="on_sale"><span class="inner">
+                          <p>Sale</p>
+                          </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                              <h4>Nadia Dress</h4>
+                              <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+                      </li>                       
+                    </ul>
+                    <a class="load_more">Load More</a>
+      </div>
+          <div class="tab-pane fade" id="profile">
+        <ul>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl2.jpg"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+            </ul>
+      </div>
+          <div class="tab-pane fade" id="dropdown1">
+        <ul>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+            </ul>
+      </div>
+          <div class="tab-pane fade" id="dropdown2">
+        <ul>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+              <li class="col-md-2 col-sm-2 col-lg-2 col-xs-12">
+            <div class="product_show"> <span class="on_sale"><span class="inner">
+              <p>Sale</p>
+              </span></span> <a href="#" class="product_image"><img src="images/girl1.png"></a>
+                  <h4>Nadia Dress</h4>
+                  <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png"></span></a> </div>
+          </li>
+            </ul>
+      </div>
+        </div>
+  </div>
+  			
+      
+      <!--% off block-->
+      <div class="container">
+    <h2 class="clearance_image"><img src="images/clearance_img.png" /></h2>
+    <div id="price_off" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 padLzero padRzero">
+          	<ul>
+                <li class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                      <div class="product_show min_height300 ipad_product_height"> <span class="on_sale"><span class="inner">
+                      <p>Sale</p>
+                      </span></span> <a class="product_image" href="#"><img src="images/girl1.jpg" /></a>
+                    <h4>Nadia Dress</h4>
+                    <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png" /></span></a> </div>
+                    </li>
+                <li class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                      <div class="product_show min_height300 ipad_product_height"> <span class="on_sale inactive"><span class="inner">
+                      <p>Sale</p>
+                      </span></span> <a class="product_image" href="#"><img src="images/girl2.jpg" /></a>
+                    <h4>Nadia Dress</h4>
+                    <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png" /></span></a> </div>
+                    </li>
+                <li class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                      <div class="product_show min_height300 ipad_product_height"> <span class="on_sale"><span class="inner">
+                      <p>Sale</p>
+                      </span></span> <a class="product_image" href="#"><img src="images/girl1.jpg" /></a>
+                    <h4>Nadia Dress</h4>
+                    <big>$64.95</big> <a class="add_to_cart">Add to cart <span><img src="images/plus.png" /></span></a> </div>
+                    </li>
+                
+      		</ul>
+            <a class="load_more load_more_active">Load More</a>
+    </div>
+  </div>
+      
+      <!--Featured part start here-->
+      <div class="featured_brands"> <span>favourite brands</span>
+    <ul>
+          <li><img src="images/addict.png" /></li>
+          <li><img src="images/adidas.png" /></li>
+          <li><img src="images/arndon.png" /></li>
+          <li><img src="images/boy.png" /></li>
+          <li><img src="images/calvin.png" /></li>
+          <li><img src="images/converse.png" /></li>
+          <li><img src="images/edwin.png" /></li>
+          <li><img src="images/greson.png" /></li>
+        </ul>
+  </div>
+      </div>
+    </section>
+
+<!--footer before part start here-->
+<section id="footerbefore">
+      <div class="container">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <h5>About LookShop</h5>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+          <img src="images/WE_ACCEPT.png" /> </div>
+  </div>
+    </section>
+
+<!--footer part start here-->
+<section id="footer">
+      <div class="container">
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 zero_padding ">
+                  <h6>Customer Service</h6>
+                  <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of payment</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+                </div>
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 zero_padding">
+                  <h6>Information</h6>
+                  <ul>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">How to Shop</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">About Nelly</a></li>
+                <li><a href="#">Investor relations</a></li>
+              </ul>
+                </div>
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 zero_padding">
+                  <h6>Stores</h6>
+                  <ul>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Madrid</a></li>
+                <li><a href="#">Tokio</a></li>
+              </ul>
+                </div>
+            
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 zero_padding">
+                  <h6>Campaigns</h6>
+                  <ul>
+                <li><a href="#">Evening dresses</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Fashion forward</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">Special Occasion Dresses</a></li>
+              </ul>
+                </div>
+            
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 ipad_align zero_padding">
+                  <h6>Social</h6>
+                  <ul class="social_media">
+                <li><a href="#"><img src="images/facebook.png" /></a></li>
+                <li><a href="#"><img src="images/google_plus.png" /></a></li>
+                <li><a href="#"><img src="images/pininterset.png" /></a></li>
+                <li><a href="#"><img src="images/twitter.png" /></a></li>
+                <li><a href="#"><img src="images/twitter1.png" /></a></li>
+                <li><a href="#"><img src="images/vimeo.png" /></a></li>
+              </ul>
+                </div>
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12 secured zero_padding"> <img src="images/secured.png" /> </div>
+ 	 </div>
+</section>
+
+<!--footer after part start here-->
+<section id="footer_after">
+      <div class="container">
+    		<div class="col-md-8 col-sm-8 col-lg-8 col-xs-12 footer_links padLzero padRzero">
+          <ul>
+        <li><a href="#">Privacy & Cookies</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Accessbility</a></li>
+        <li><a href="#">Store Directory</a></li>
+        <li><a href="#">Privacy & Cookies</a></li>
+      </ul>
+        </div>
+    		<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12 right_reserved padRzero">
+          <p><a href="#">@LookShop.com</a> All Right Reserved </p>
+        </div>
+  	  </div>
+</section>
+    
+<!--Mobile footer toggle start here-->
+    
+<div class="footer_mobile_menu">
+	<div class="container">
+        <div class="navbar-header">
+                      <button class="navbar-toggle collapsed pull-left" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+      	<span class="footer_reserved">
+        	<a href="#">@Lookshop.com</a>
+            <p>All Right Reserved</p>
+        </span>			  
+        </div>
+        <nav style="height: 1px;" class="navbar-collapse bs-navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li>                  
+                    	<div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                          <h6>Customer Service</h6>
+                          <ul class="marginB10">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of payment</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+                        </div>
+                    </li>
+                    <li>
+                  		<div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                          <h6>Information</h6>
+                          <ul class="marginB10"s>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">How to Shop</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">About Nelly</a></li>
+                <li><a href="#">Investor relations</a></li>
+              </ul>
+                        </div>
+                	</li>
+                    <li>
+                  <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                          <h6>Campaigns</h6>
+                          <ul class="marginB10">
+                <li><a href="#">Evening dresses</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Fashion forward</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">Special Occasion Dresses</a></li>
+              </ul>
+                        </div>
+                </li>
+                
+                 <li>
+                  <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                          <h6>Stores</h6>
+                          <ul class="marginB10">
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Madrid</a></li>
+                <li><a href="#">Tokio</a></li>
+              </ul>
+                        </div>
+                </li>
+                
+                 <li>
+                  <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 social_media">
+                          <h6>Social</h6>
+                          <ul class="social_media marginB10">
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/google_plus.png"></a></li>
+                <li><a href="#"><img src="images/pininterset.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/twitter1.png"></a></li>
+                <li><a href="#"><img src="images/vimeo.png"></a></li>
+              </ul>
+                        </div>
+                </li>
+                </ul>
+            </nav>
+    </div>
+</div>
+</body>
+</html>
